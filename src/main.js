@@ -19,12 +19,9 @@ if (!loader) {
 function showLoader() {
   loader.classList.add('active');
 }
-
 function hideLoader() {
-  loader.classList.remove('active');
+    loader.classList.remove('active');
 }
-
-
 
 
 form.addEventListener('submit', async (event) => {
@@ -45,7 +42,7 @@ form.addEventListener('submit', async (event) => {
   } catch (error) {
     iziToast.error({ title: 'Error', message: 'Something went wrong! Please try again.' });
   } finally {
-    hideLoader();
-  }
+      hideLoader();
+    }
 });
   });
